@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "description": "An array of role groups",
+    "items": {
+        "type": "array",
+        "description": "All roles in the role group are always assigned all at once to members",
+        "items": {
+            "type": "string",
+            "description": "A role ID",
+            "pattern": "^[0-9]{17,20}$"
+        }
+    }
+}

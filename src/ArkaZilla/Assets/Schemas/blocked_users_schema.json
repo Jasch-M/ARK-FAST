@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "description": "an array of blocked users",
+    "items": {
+        "type": "object",
+        "description": "An object representing a user block",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The unique identifier of the blocked user"
+            },
+            "timestamp": {
+                "type": "number",
+                "description": "The unix timestamp at which the user is unblocked."
+            },
+            "user-facing-note": {
+                "type": "string",
+                "description": "A note that the user can see related to their block"
+            },
+            "private-facing-note": {
+                "type": "string",
+                "description": "A note that the administrators can see related to the user's block"
+            },
+            "type": {
+                "type": "string",
+                "description": "The type of block",
+                "enum": [
+                    "manual-block",
+                    "denied"
+                ]
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "id",
+            "timestamp",
+            "user-facing-note",
+            "private-facing-note",
+            "type"
+        ]
+    }
+}
