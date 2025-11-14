@@ -8,7 +8,7 @@ using ArkaZilla.Services;
 
 Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
 
-var builder = Host.CreateApplicationBuilder(args);
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddNamedOptions<StartupOptions>();
 builder.Services.AddNamedOptions<ReferenceOptions>();

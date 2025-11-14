@@ -110,17 +110,17 @@ public class DiscordBotUserService
         const ulong generalChannelId = 1384154960496820285;
         const ulong ssbuChannelId = 1205907392110534676;
         const ulong valorantChannelId = 1205907130339557486;
-        const ulong rocketLeagueChannelId = 1278311752509030540;
+        // const ulong rocketLeagueChannelId = 1278311752509030540;
         const ulong arkadChannelId = 1027560985445273670;
 
         SocketGuildChannel? generalChannel = arkadGuild.GetTextChannel(generalChannelId);
         SocketGuildChannel? ssbuChannel = arkadGuild.GetTextChannel(ssbuChannelId);
         SocketGuildChannel? valorantChannel = arkadGuild.GetTextChannel(valorantChannelId);
-        SocketGuildChannel? rocketLeagueChannel = arkadGuild.GetTextChannel(rocketLeagueChannelId);
+        // SocketGuildChannel? rocketLeagueChannel = arkadGuild.GetTextChannel(rocketLeagueChannelId);
         SocketGuildChannel? arkadChannel = arkadGuild.GetTextChannel(arkadChannelId);
 
         SocketGuildChannel?[] channels =
-            [generalChannel, ssbuChannel, valorantChannel, rocketLeagueChannel, arkadChannel];
+            [generalChannel, ssbuChannel, valorantChannel/*, rocketLeagueChannel*/, arkadChannel];
 
 
         if (channels.Any(channel => channel is not SocketVoiceChannel))

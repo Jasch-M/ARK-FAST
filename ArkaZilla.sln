@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkaZilla.Data", "src\ArkaZ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkaZilla.Tests", "test\ArkaZilla.Tests\ArkaZilla.Tests.csproj", "{E9F70A66-1C95-4709-8C53-0D1BB4A5030B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{4FEE6D82-D1FA-4CE2-A136-0A34AF2828CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{C4609863-9054-4ABE-94BB-C4B6B5978CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkaZilla.Module.RoleAssociation", "ArkaZilla.Module.RoleAssociation\ArkaZilla.Module.RoleAssociation.csproj", "{E112528E-72BE-416D-AE8B-D68AE4556A31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkaZilla.Modules.RoleAssociation", "modules\ArkaZilla.Modules.RoleAssociation\ArkaZilla.Modules.RoleAssociation.csproj", "{940B3EE9-09DC-4472-A5DB-0053B614B489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkaZilla.Data.Module.RoleAssociation", "ArkaZilla.Data.Module.RoleAssociation\ArkaZilla.Data.Module.RoleAssociation.csproj", "{AB4BF0AF-4198-4CDE-B2B8-7AE1EF08C003}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkaZilla.Modules.Data.RoleAssociation", "modules\ArkaZilla.Modules.Data.RoleAssociation\ArkaZilla.Modules.Data.RoleAssociation.csproj", "{8642EC36-5387-4E60-9C71-9C5FF3A76741}"
 EndProject
 Global
 		GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +41,14 @@ Global
 			{AB4BF0AF-4198-4CDE-B2B8-7AE1EF08C003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 			{AB4BF0AF-4198-4CDE-B2B8-7AE1EF08C003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 			{AB4BF0AF-4198-4CDE-B2B8-7AE1EF08C003}.Release|Any CPU.Build.0 = Release|Any CPU
+			{940B3EE9-09DC-4472-A5DB-0053B614B489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+			{940B3EE9-09DC-4472-A5DB-0053B614B489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+			{940B3EE9-09DC-4472-A5DB-0053B614B489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+			{940B3EE9-09DC-4472-A5DB-0053B614B489}.Release|Any CPU.Build.0 = Release|Any CPU
+			{8642EC36-5387-4E60-9C71-9C5FF3A76741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+			{8642EC36-5387-4E60-9C71-9C5FF3A76741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+			{8642EC36-5387-4E60-9C71-9C5FF3A76741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+			{8642EC36-5387-4E60-9C71-9C5FF3A76741}.Release|Any CPU.Build.0 = Release|Any CPU
 		EndGlobalSection
 		GlobalSection(SolutionProperties) = preSolution
 				HideSolutionNode = FALSE
@@ -49,7 +57,7 @@ Global
 				SolutionGuid = {7F9C8732-3284-405D-93A7-F40D4094F5FE}
 		EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E112528E-72BE-416D-AE8B-D68AE4556A31} = {4FEE6D82-D1FA-4CE2-A136-0A34AF2828CC}
-		{AB4BF0AF-4198-4CDE-B2B8-7AE1EF08C003} = {4FEE6D82-D1FA-4CE2-A136-0A34AF2828CC}
+		{940B3EE9-09DC-4472-A5DB-0053B614B489} = {C4609863-9054-4ABE-94BB-C4B6B5978CA1}
+		{8642EC36-5387-4E60-9C71-9C5FF3A76741} = {C4609863-9054-4ABE-94BB-C4B6B5978CA1}
 	EndGlobalSection
 EndGlobal
