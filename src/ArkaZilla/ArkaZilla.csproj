@@ -7,6 +7,7 @@
     <UserSecretsId>653b9ddf-611e-4bd6-b4ee-4719c9837cf7</UserSecretsId>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration) == Release">
@@ -24,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
     <Content Include="Properties\launchSettings.json" />
   </ItemGroup>
 
