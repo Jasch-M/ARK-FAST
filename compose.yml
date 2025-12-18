@@ -28,6 +28,8 @@ services:
             interval: 10s
             timeout: 5s
             retries: 5
-        # volumes:
-        #   - ./db/data:/var/lib/postgresql/data
-        #   - ./db/start-scripts:/docker-entrypoint-initdb.d
+        volumes:
+            - pg_data:/var/lib/postgresql/data
+
+volumes:
+    pg_data:
